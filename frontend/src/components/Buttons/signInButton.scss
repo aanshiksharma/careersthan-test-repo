@@ -1,0 +1,15 @@
+@import "../../styles/colors";
+
+.signInButton {
+  width: 100%;
+  text-align: center;
+  background: $cta !important;
+  padding: 1em;
+  border-radius: 4px;
+  color: $text-2;
+  font-size: 1rem;
+
+  &:hover {
+    background: $cta-hover !important;
+  }
+}

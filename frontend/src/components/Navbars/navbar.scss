@@ -1,0 +1,75 @@
+@import "../../styles/colors";
+
+header {
+  box-shadow: 2px 2px 10px $shadow;
+  font-size: 1.125rem;
+  background: $bg-2;
+  position: sticky;
+  top: 0;
+  z-index: 999;
+
+  .wrapper-2 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1em;
+    padding-inline-end: 2em;
+  }
+
+  .left {
+    gap: 1.5em;
+  }
+
+  .logo {
+    display: flex;
+    align-items: center;
+    gap: 0.5em;
+  }
+
+  .searchbar {
+    border-radius: 6px;
+    background: $bg-1;
+    padding: 0.2em 0.6em;
+    font-size: 16px;
+
+    input {
+      background: transparent;
+    }
+  }
+
+  .navlist {
+    display: flex;
+    align-items: center;
+    gap: 0.75em;
+
+    .flex {
+      gap: 0.5em;
+    }
+
+    li {
+      position: relative;
+
+      &:last-child a {
+        color: $cta;
+        border-color: $cta;
+
+        &:hover {
+          background: $bg-hover-1;
+        }
+      }
+    }
+
+    a {
+      border: 1.5px solid transparent;
+      border-radius: 12px;
+      padding: 0.4em 1em;
+
+      transition: 200ms ease;
+
+      &:hover {
+        border-color: $cta;
+        color: $cta;
+      }
+    }
+  }
+}

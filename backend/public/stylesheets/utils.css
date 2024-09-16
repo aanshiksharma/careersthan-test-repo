@@ -1,0 +1,54 @@
+input {
+  background: transparent;
+  font-size: 1rem;
+  border: 0;
+  outline: 0;
+}
+
+a {
+  text-decoration: none;
+  color: #000000;
+}
+
+ul {
+  list-style-type: none;
+}
+
+h2 {
+  font-size: 1.125rem;
+  font-weight: 600;
+}
+
+h3 {
+  font-size: 0.75rem;
+  font-weight: 600;
+}
+
+h4 {
+  font-size: 1.25rem;
+  font-weight: 600;
+}
+
+p {
+  font-size: 0.5rem;
+  color: #7b8387;
+}
+
+.btn {
+  outline: 0;
+  border: 0;
+  background: transparent;
+  cursor: pointer;
+  transition: 200ms ease;
+}
+
+.flex {
+  display: flex;
+  align-items: center;
+}
+
+.grid {
+  display: grid;
+}
+
+/*# sourceMappingURL=utils.css.map */

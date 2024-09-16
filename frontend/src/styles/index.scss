@@ -1,0 +1,16 @@
+@import "colors";
+@import "utils";
+@import "wrappers";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  line-height: 1.7;
+  background: $bg-3;
+  scrollbar-gutter: stable;
+}
