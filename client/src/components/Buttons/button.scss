@@ -6,4 +6,12 @@
   background: transparent;
   cursor: pointer;
   transition: 200ms ease;
+
+  display: flex;
+  align-items: center;
+  gap: 0.5em;
+}
+
+.flex-reverse {
+  flex-direction: row-reverse;
 }

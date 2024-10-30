@@ -1,0 +1,45 @@
+@import "../../styles/colors";
+@import "../../styles/utils";
+
+.messageBox {
+  position: fixed;
+  bottom: 0;
+  right: 2rem;
+  height: 70vh;
+  max-width: 340px;
+  border-start-end-radius: 1em;
+  border-start-start-radius: 1em;
+  box-shadow: 0px 0px 9px 0px $shadow;
+
+  transform: translateY(calc(70vh - 3rem));
+  transition: 300ms ease-out;
+
+  .heading {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 6rem;
+    background: $cta;
+    color: $text-2;
+    padding: 0.5em 1em;
+    border-start-end-radius: 1em;
+    border-start-start-radius: 1em;
+
+    font-size: 1.125rem;
+
+    .button {
+      all: unset;
+      cursor: pointer;
+
+      img {
+        transition: 100ms ease;
+      }
+    }
+  }
+
+  .chatContainer {
+    height: 100%;
+    padding: 1em 0.75em;
+    background: $bg-2;
+  }
+}

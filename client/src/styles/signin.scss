@@ -1,13 +1,10 @@
 @import "colors";
 
-#root {
-  height: 100vh;
-}
-
-main {
+.main-content {
   display: grid;
   place-items: center;
   height: calc(100% - 83px);
+  padding-block: 1.5em;
 
   .container {
     display: grid;

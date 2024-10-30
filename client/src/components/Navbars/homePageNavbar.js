@@ -1,4 +1,8 @@
+import React from "react";
+
+// Components
 import LinkButton from "../Buttons/button.js";
+import SearchBar from "../FormFields/searchBar.js";
 
 // Styles
 import "./navbar.scss";
@@ -15,18 +19,7 @@ function Navbar() {
               <img src="/icons/logoName.svg" alt="careersthan" />
             </a>
 
-            {/* Searchbar */}
-            <form action="#" className="searchbar">
-              <input
-                type="text"
-                name="search"
-                id="searchBar"
-                placeholder="Search for Jobs..."
-              />
-              <button type="submit" className="btn">
-                <img src="/icons/searchIcon.svg" alt="" />
-              </button>
-            </form>
+            <SearchBar placeholder={"Search"} />
           </div>
 
           {/* Navbar */}

@@ -1,4 +1,5 @@
 import LinkButton from "../Buttons/button.js";
+import { Link } from "react-router-dom";
 
 // Styles
 import "./navbar.scss";
@@ -10,10 +11,10 @@ function Navbar() {
       <header>
         <div className="wrapper-2">
           <div className="left flex">
-            <a href="/" className="logo">
+            <Link to="/" className="logo">
               <img src="/icons/logo.svg" alt="" />
               <img src="/icons/logoName.svg" alt="careersthan" />
-            </a>
+            </Link>
           </div>
 
           {/* Navbar */}

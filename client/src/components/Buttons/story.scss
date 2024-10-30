@@ -1,0 +1,50 @@
+@import "../../styles/colors";
+
+.story {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 0;
+  outline: 4px solid $cta;
+  outline-offset: 2px;
+  border-radius: 50%;
+  max-width: 5rem;
+
+  transition: 200ms ease;
+
+  img {
+    max-width: 5rem;
+    aspect-ratio: 1;
+    border-radius: 50%;
+  }
+
+  &:hover {
+    outline-offset: 4px;
+  }
+
+  &.myStory {
+    position: relative;
+    cursor: pointer;
+
+    &::after {
+      content: "+";
+      position: absolute;
+      bottom: 0;
+      right: 0;
+
+      background: $bg-2;
+      color: $cta;
+      width: 1.25em;
+      aspect-ratio: 1;
+
+      border-radius: 50%;
+      outline: 1px solid $cta;
+      outline-offset: -3px;
+      font-size: 1.25rem;
+
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+}

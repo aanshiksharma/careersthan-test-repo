@@ -1,0 +1,14 @@
+@import "../../styles/colors";
+
+.searchbar {
+  border-radius: 6px;
+  background: $bg-1;
+  padding: 0.5em 0.6em;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  input {
+    background: transparent;
+  }
+}

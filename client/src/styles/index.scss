@@ -6,11 +6,15 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  scrollbar-gutter: stable;
 }
 
 body {
   font-family: "Open Sans", sans-serif;
   line-height: 1.7;
   background: $bg-3;
-  scrollbar-gutter: stable;
+}
+
+#root {
+  height: 100vh;
 }

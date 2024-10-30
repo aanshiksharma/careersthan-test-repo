@@ -9,7 +9,7 @@ function SignIn() {
   return (
     <>
       <Navbar />
-      <main>
+      <div className="main-content">
         <div className="container">
           <h2>Sign in</h2>
           <form action="users/login" method="post">
@@ -84,7 +84,7 @@ function SignIn() {
         <div className="background">
           <img src="icons/signin-bg.svg" alt="" />
         </div>
-      </main>
+      </div>
     </>
   );
 }

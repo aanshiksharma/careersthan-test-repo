@@ -1,3 +1,11 @@
+import React from "react";
+import { Link } from "react-router-dom";
+import { useState } from "react";
+
+// Components
+import SearchBar from "../FormFields/searchBar";
+
+// Styles
 import "./navbar.scss";
 
 function Navbar() {
@@ -6,48 +14,37 @@ function Navbar() {
       <header>
         <div className="wrapper-2">
           <div className="left flex">
-            <a href="/" className="logo">
+            <Link to="/" className="logo">
               <img src="/icons/logo.svg" alt="" />
               <img src="/icons/logoName.svg" alt="careersthan" />
-            </a>
+            </Link>
 
-            {/* Searchbar */}
-            <form action="#" className="searchbar">
-              <input
-                type="text"
-                name="search"
-                id="searchBar"
-                placeholder="Search"
-              />
-              <button type="submit" className="btn">
-                <img src="/icons/searchIcon.svg" alt="" />
-              </button>
-            </form>
+            <SearchBar placeholder={"Search"} />
           </div>
 
           {/* Navbar */}
           <nav className="navbar">
             <ul className="navlist">
               <li>
-                <a href="/feed">Home</a>
+                <Link to="/feed">Home</Link>
               </li>
               <li>
-                <a href="#">Network</a>
+                <Link to="/networs">Network</Link>
               </li>
               <li>
-                <a href="#">Jobs</a>
+                <Link to="/jobs">Jobs</Link>
               </li>
               <li>
-                <a href="#">Messaging</a>
+                <Link to="/messages">Messaging</Link>
               </li>
               <li>
-                <a href="#">Notifications</a>
+                <Link to="/notifications">Notifications</Link>
               </li>
               <li>
-                <a href="#" className="flex" aria-selected="false">
+                <Link to="#" className="flex">
                   <img src="/icons/profileLogo.svg" alt="" />
                   Profile
-                </a>
+                </Link>
               </li>
             </ul>
           </nav>
